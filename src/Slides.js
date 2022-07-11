@@ -26,12 +26,12 @@ function NextHandler()
 
 
 return (
-<div>
+<div className="Slide-maindiv">
     <Nav RestartHandler={RestartHandler} PrevHandler={PrevHandler} NextHandler={NextHandler} Slideno={Slideno} SlidesArraylength={SlidesArray.length-1}/>
 
   <div id="slide" className="card text-center">
       <h2 data-testid="title">Slide Title Here</h2>
-        <div>
+        <div className="slide-container">
           <h1> {SlidesArray[Slideno].headline} </h1>   
           <p> {SlidesArray[Slideno].content}  </p>     
         </div>
