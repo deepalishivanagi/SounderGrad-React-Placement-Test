@@ -1,5 +1,8 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Happy+Monkey&family=Josefin+Sans&family=Orbitron:wght@800&family=Poppins&family=Quintessential&family=Roboto+Slab:wght@300&family=Rubik:wght@400;700&display=swap');
+
 .App {
   text-align: center;
+  font-family: 'Bebas Neue', cursive;
 }
 
 .App-logo {

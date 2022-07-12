@@ -1,0 +1,26 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Happy+Monkey&family=Josefin+Sans&family=Lobster&family=Orbitron:wght@800&family=Poppins&family=Quintessential&family=Roboto+Slab:wght@300&family=Rubik:wght@400;700&display=swap');
+
+.slide-container {
+    background-color:  #a01a58;
+    border: 2px solid #892b64;
+    height: 60%;
+    width: 70%;
+    box-shadow: 1rem 1rem 1rem 0rem;
+    margin-top: 2rem;
+}
+.slide-container>h1{
+    margin-top: 0.5rem;
+}
+.slide-container>p{
+    padding: 0rem 0.5rem;
+}
+#slide {
+    background-color: #a01a58;
+    height: 30rem;
+}
+#slide>h2{
+    color: black;
+    text-shadow: 0rem 0rem 1rem white;
+    padding: 1rem;
+    font-family: 'Lobster', cursive;
+}

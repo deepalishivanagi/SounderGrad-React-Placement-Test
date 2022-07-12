@@ -1,39 +1,19 @@
-import { useState } from "react";
 import { SlidesArray } from "./SlidesArray";
-import Nav from "./Nav";
 import React from 'react';
+import './Slides.css';
+import { IconButton } from "@mui/material";
+import Avatar from '@mui/material/Avatar';
 
-
-
-function Slides() {
-
-const [Slideno,setSlideno]=useState(0);
-
-function RestartHandler()
-  {
-    setSlideno(0);
-  }
-function PrevHandler()
-  {
-    var value=Slideno-1;
-    setSlideno(value);
-  }
-function NextHandler()
-{
-    var value=Slideno+1;
-    setSlideno(value);
-}
-
+function Slides(props) {
 
 return (
 <div className="Slide-maindiv">
-    <Nav RestartHandler={RestartHandler} PrevHandler={PrevHandler} NextHandler={NextHandler} Slideno={Slideno} SlidesArraylength={SlidesArray.length-1}/>
-
   <div id="slide" className="card text-center">
-      <h2 data-testid="title">Slide Title Here</h2>
+      <h2 data-testid="title">Successful Businesspeople to know</h2>
         <div className="slide-container">
-          <h1> {SlidesArray[Slideno].headline} </h1>   
-          <p> {SlidesArray[Slideno].content}  </p>     
+          <IconButton><Avatar alt="image" src={SlidesArray[props.Slideno].src}  sx={{width:"6rem",height:"6rem",backgroundSize:"cover"}} /> </IconButton>
+          <h1> {SlidesArray[props.Slideno].headline} </h1>   
+          <p> {SlidesArray[props.Slideno].content}  </p>     
         </div>
   </div>
 </div>

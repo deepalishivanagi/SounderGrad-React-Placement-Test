@@ -1,0 +1,13 @@
+.footer{
+    background-color: #723c70;
+    height: 4.5rem;
+    margin-top: -1.5rem;
+    font-family: 'Lobster', cursive;
+}
+
+.social-link {
+    display: flex;
+    justify-content: center;
+    margin: 0rem 2rem;
+    margin-top: -1rem;
+}
