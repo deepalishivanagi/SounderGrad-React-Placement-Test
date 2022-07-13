@@ -9,7 +9,7 @@ export default function Footer(){
     return(
         <div className="footer">
             <footer>    
-                <h3>Made with love</h3>
+                <h3>Made by Deepali Shivanagi</h3>
                 <div className='social-link'>
                     <IconButton href="https://twitter.com/DeepaliShivan1" target="_blank" rel="twitter_link" sx={{color:"black","&:hover":{color:"white"}}}>
                          <TwitterIcon />
